@@ -22,7 +22,7 @@ angular.module('goTodoAppApp')
             },function(errorResponse){
 				console.log(errorResponse);
 			});
-		}
+		};
 
         $scope.addTodo = function () {
 
@@ -40,10 +40,10 @@ angular.module('goTodoAppApp')
 				console.log(successResponse);
 			},function(errorResponse){
 				console.log(errorResponse);
-			})
+			});
 
 			$scope.newTodo = '';
-		}
+		};
 
 		$scope.removeTodo = function (selectedTodo, index) {
             todo.remove({'id':selectedTodo.id}, selectedTodo, function(successResponse){

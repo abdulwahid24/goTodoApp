@@ -8,4 +8,4 @@
  * Constant in the goTodoAppApp.
  */
 angular.module('goTodoAppApp')
-  .constant('restEndPoint', 'http://localhost:8000');
+  .constant('restEndPoint', 'https://secure-brook-4935.herokuapp.com');

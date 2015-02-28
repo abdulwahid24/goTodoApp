@@ -15,7 +15,7 @@ angular.module('goTodoAppApp')
             return $resource(restEndPoint+'/todos/', {}, {
                 get : {method : 'GET', isArray:true},
                 post: {method : 'POST', params:params},
-            } )
+            });
         },
 
         todo : function(urlParams, params){
@@ -23,9 +23,9 @@ angular.module('goTodoAppApp')
                 get : {method : 'GET', isArray:false},
                 patch: {method : 'PUT', params:params},
                 remove: {method: 'DELETE'}
-            } )
+            });
         }
-    }
+    };
 
     return storage;
   }]);
